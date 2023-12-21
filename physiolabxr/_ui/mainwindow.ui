@@ -24,7 +24,7 @@
        <cursorShape>ArrowCursor</cursorShape>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="visualization_tab">
        <attribute name="title">
@@ -62,8 +62,8 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>1554</width>
-                <height>857</height>
+                <width>1524</width>
+                <height>825</height>
                </rect>
               </property>
               <layout class="QHBoxLayout" name="scrollAreaWidgetContents_3_layout">
@@ -131,6 +131,12 @@
         <string>Scripting</string>
        </attribute>
        <layout class="QVBoxLayout" name="scripting_tab_vertical_layout"/>
+      </widget>
+      <widget class="QWidget" name="scripting_graphic_tab">
+       <attribute name="title">
+        <string>Graphic Scripting</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="scripting_graphic_tab_vertical_layout"/>
       </widget>
      </widget>
     </item>
@@ -298,7 +304,7 @@
      <x>0</x>
      <y>0</y>
      <width>1600</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menufile">

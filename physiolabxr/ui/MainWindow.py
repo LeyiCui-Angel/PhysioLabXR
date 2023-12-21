@@ -17,6 +17,7 @@ from physiolabxr.ui.AddWiget import AddStreamWidget
 from physiolabxr.ui.BaseStreamWidget import BaseStreamWidget
 from physiolabxr.ui.CloseDialog import CloseDialog
 from physiolabxr.ui.LSLWidget import LSLWidget
+from physiolabxr.ui.ScriptingGraphicTab import ScriptingGraphicTab
 from physiolabxr.ui.ScriptingTab import ScriptingTab
 from physiolabxr.ui.SplashScreen import SplashLoadingTextNotifier
 from physiolabxr.ui.VideoWidget import VideoWidget
@@ -114,6 +115,11 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.scripting_tab = ScriptingTab(self)
         self.scripting_tab_vertical_layout.addWidget(self.scripting_tab)
+
+        self.scripting_graphic_tab = ScriptingGraphicTab(self)
+        self.scripting_graphic_tab_vertical_layout.addWidget(self.scripting_graphic_tab)
+
+
 
         # windows
         self.pop_windows = {}
