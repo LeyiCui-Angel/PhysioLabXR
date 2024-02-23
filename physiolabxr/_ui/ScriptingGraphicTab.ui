@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1275</width>
-    <height>967</height>
+    <width>1600</width>
+    <height>1200</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,7 @@
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QPushButton" name="add_button">
+       <widget class="QPushButton" name="AddScriptBtn">
         <property name="maximumSize">
          <size>
           <width>36</width>
@@ -64,36 +64,7 @@
        <number>1</number>
       </property>
       <item>
-       <widget class="QScrollArea" name="scrollArea_2">
-        <property name="baseSize">
-         <size>
-          <width>500</width>
-          <height>300</height>
-         </size>
-        </property>
-        <property name="widgetResizable">
-         <bool>true</bool>
-        </property>
-        <widget class="QWidget" name="scrollAreaWidgetContents">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>1245</width>
-           <height>423</height>
-          </rect>
-         </property>
-        </widget>
-       </widget>
-      </item>
-      <item>
        <widget class="QScrollArea" name="scrollArea">
-        <property name="baseSize">
-         <size>
-          <width>500</width>
-          <height>300</height>
-         </size>
-        </property>
         <property name="widgetResizable">
          <bool>true</bool>
         </property>
@@ -102,8 +73,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1245</width>
-           <height>423</height>
+           <width>1576</width>
+           <height>1112</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="ScriptingWidgetScrollLayout">
@@ -125,3 +96,4 @@
  <resources/>
  <connections/>
 </ui>
+

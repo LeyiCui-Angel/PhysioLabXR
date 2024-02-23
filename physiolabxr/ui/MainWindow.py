@@ -40,6 +40,7 @@ from physiolabxr.ui.ReplayTab import ReplayTab
 from physiolabxr.utils.buffers import DataBuffer
 from physiolabxr.utils.ui_utils import another_window
 from physiolabxr.ui.dialogs import dialog_popup
+from physiolabxr.ui.ScriptingGraphicTab import ScriptingGraphicTab
 
 import numpy as np
 
@@ -115,6 +116,9 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.scripting_tab = ScriptingTab(self)
         self.scripting_tab_vertical_layout.addWidget(self.scripting_tab)
+
+        self.graphic_scripting_tab = ScriptingGraphicTab(self)
+        self.scripting_graphic_tab_vertical_layout.addWidget(self.graphic_scripting_tab)
 
         # windows
         self.pop_windows = {}
