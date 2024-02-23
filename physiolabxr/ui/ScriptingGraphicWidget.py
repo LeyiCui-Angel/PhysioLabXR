@@ -42,9 +42,8 @@ from physiolabxr.utils.ui_utils import add_presets_to_combobox, \
     another_window, update_presets_to_combobox, validate_script_path, show_label_movie, get_int_from_line_edit
 from physiolabxr.ui.dialogs import dialog_popup
 
-
 class ScriptingGraphicWidget(QtWidgets.QWidget):
-    def __init__(self, parent_widget: QtWidgets, main_window, port, gscript_preset: ScriptPreset):
+    def __init__(self, parent_widget: QtWidgets.QWidget, main_window, port, gscript_preset: ScriptPreset):
         super().__init__(parent_widget)
         self.ui = uic.loadUi(AppConfigs()._ui_ScriptingGraphicWidget, self)
 
@@ -55,3 +54,13 @@ class ScriptingGraphicWidget(QtWidgets.QWidget):
         self.output_widgets = []
         self.param_widgets = []
         self.main_window = main_window
+
+        self.ui.addNewStateButton.clicked.connect(self.add_new_state_widget)
+
+        self.state_widgets = []
+
+    def add_new_state_widget(self):
+        state_widget_ui = uic.loadUi(AppConfigs()._ui_ScriptingState)
+        scroll_area_layout = self.ui.scrollAreaWidgetContents2.layout()
+        position_to_insert = scroll_area_layout.count() - 1
+        scroll_area_layout.insertWidget(position_to_insert, state_widget_ui)

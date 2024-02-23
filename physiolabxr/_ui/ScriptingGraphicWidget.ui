@@ -10,83 +10,76 @@
     <height>986</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>Form</string>
-  </property>
-  <layout class="QVBoxLayout" name="mainLayout">
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QScrollArea" name="scrollArea">
-     <property name="widgetResizable">
-      <bool>true</bool>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1235</width>
-        <height>960</height>
-       </rect>
+     <widget class="QScrollArea" name="scrollArea1">
+      <property name="widgetResizable">
+       <bool>true</bool>
       </property>
-      <layout class="QVBoxLayout" name="scrollAreaLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>100</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Console</string>
-         </property>
-        </widget>
-       </item>
-       <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="minimumSize">
-          <size>
-           <width>120</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>120</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Open Scripts</string>
-         </property>
-        </widget>
-       </item>
-       <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
-        <widget class="QPushButton" name="exampleButton">
-         <property name="minimumSize">
-          <size>
-           <width>60</width>
-           <height>32</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>60</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Run</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <widget class="QWidget" name="scrollAreaWidgetContents1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1235</width>
+         <height>294</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout1"/>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea2">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1235</width>
+         <height>657</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout2">
+        <item alignment="Qt::AlignLeft|Qt::AlignTop">
+         <widget class="QPushButton" name="addNewStateButton">
+          <property name="text">
+           <string>Add New State</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+           <widget class="QPushButton" name="consoleLogButton">
+            <property name="text">
+             <string>Console Log</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+           <widget class="QPushButton" name="runButton">
+            <property name="text">
+             <string>Run</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+           <widget class="QPushButton" name="openScriptsButton">
+            <property name="text">
+             <string>Open Scripts</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </widget>
    </item>
