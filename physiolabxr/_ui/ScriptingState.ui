@@ -1,31 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>231</width>
-    <height>137</height>
+    <width>218</width>
+    <height>174</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>State Box</string>
   </property>
-  <widget class="QToolButton" name="toolButton">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>20</y>
-     <width>141</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>...</string>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+    <widget class="QLabel" name="topLabel">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string>background-color: yellow;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item alignment="Qt::AlignRight">
+      <widget class="QToolButton" name="leftTriangleButton">
+       <property name="icon">
+        <iconset>
+         <normaloff>../_media/deprecated_pngs/red_triangle.png</normaloff>../_media/deprecated_pngs/red_triangle.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditTrain">
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>140</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignLeft">
+      <widget class="QToolButton" name="rightTriangleButton">
+       <property name="icon">
+        <iconset>
+         <normaloff>../_media/deprecated_pngs/green_triangle.png</normaloff>../_media/deprecated_pngs/green_triangle.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
